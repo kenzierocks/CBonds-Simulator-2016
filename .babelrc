@@ -1,0 +1,14 @@
+{
+    "presets": [
+        [
+            "es2015",
+            {
+                "spec": true,
+                "modules": "commonjs"
+            }
+        ]
+    ],
+    "plugins": [
+        "transform-function-bind"
+    ]
+}
