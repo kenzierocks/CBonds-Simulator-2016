@@ -58,10 +58,10 @@ function commonTransform(customOpts, watch) {
                     }
                     timelog("An error occurred:");
                     console.error(err.toString());
-                    console.error(err.stack);
                     if (err["codeFrame"]) {
                         console.error(err["codeFrame"]);
                     }
+                    console.error(err.stack);
                 })
             //.pipe(showProgress(process.stdout))
                 .pipe(fs.createWriteStream(f))
