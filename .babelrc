@@ -6,8 +6,10 @@
                 "spec": true,
                 "modules": "commonjs"
             }
-        ]
+        ],
+        "babili"
     ],
+    "comments": false,
     "plugins": [
         "transform-function-bind"
     ]
