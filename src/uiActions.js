@@ -3,6 +3,8 @@ import {Promise} from "./es2015";
 import {PeriodicTableSelectDialog} from "./ui/periodic_table";
 import {drawAt} from "./ui/d2d_extensions";
 
+import $ from "jquery";
+
 const ptX = 300;
 const ptY = 100;
 /** @type PeriodicTableSelectDialog|ClearingUIElement */
@@ -100,7 +102,7 @@ export class CovalentMenuItem extends MenuItem {
             getElements(-1)
                 .then(elements => {
                     console.log(elements.map(a => a.name).join(","));
-                });
+                }, $.noop);
         }
         return true;
     }
